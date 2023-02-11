@@ -1,0 +1,67 @@
+import React from 'react';
+import { bool, shape, string } from 'prop-types';
+import { useScrollLock } from '@magento/peregrine';
+import Footer from '../Footer';
+import Header from '../Header';
+import FragrancesSection from '../FragrancesSection';
+import ArrivalsSection from '../ArrivalsSection';
+import BestSellers from '../BestSellers';
+import LegacySection from '../LegacySection';
+import GiftingSection from '../GiftingSection';
+import PopularCategoriesSec from '../PopularCategoriesSec';
+import StorySection from '../StorySection';
+import ReviewSection from '../ReviewSection';
+import PressMediaSec from '../PressMediaSec';
+import BlogSection from '../BlogSection';
+import InstagramSection from '../InstagramSection';
+import BannerSwipSlider from '../BannerSwipSlider';
+import CommonModals from '../CommonModals';
+import BlogMobile from '../BlogMobile';
+import ReviewMobile from '../ReviewMobile';
+import PressMediaSecSwip from '../PressMediaSecSwip';
+import InstagramSwipSection from '../InstagramSwipSection';
+
+
+const Main = props => {
+    const { isMasked } = props;
+    const classes = "mainContent homePage";//useStyle(defaultClasses, props.classes);
+    const rootClass = isMasked ? classes.root_masked : classes.root;
+
+    useScrollLock(isMasked);
+
+    return (
+        <main className='mainContent homePage'>
+            <Header />
+            <BannerSwipSlider />
+            <FragrancesSection />
+            <ArrivalsSection />
+            <BestSellers />
+            <LegacySection />
+            <GiftingSection />
+            <PopularCategoriesSec />
+            <StorySection />
+            <ReviewSection />
+            <ReviewMobile />
+            {/*<PressMediaSec />*/}
+            <PressMediaSecSwip />
+            <BlogSection />
+            <BlogMobile />
+            {/*<InstagramSection />*/}
+            <InstagramSwipSection />
+            <CommonModals/>
+            <Footer />
+        </main>
+    );
+};
+
+export default Main;
+
+Main.propTypes = {
+    classes: shape({
+        page: string,
+        page_masked: string,
+        root: string,
+        root_masked: string
+    }),
+    isMasked: bool
+};

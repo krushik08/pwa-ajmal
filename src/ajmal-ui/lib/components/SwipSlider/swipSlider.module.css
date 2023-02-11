@@ -1,0 +1,5 @@
+.swiper-slide {
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 20px!important;
+}

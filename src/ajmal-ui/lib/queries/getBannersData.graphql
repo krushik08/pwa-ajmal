@@ -1,0 +1,10 @@
+query GetBannersData($identifier: [string]!) {
+  cmsBlocks(identifiers: ["2","3","4"]) {
+    items {
+      title
+      content
+      identifier
+      __typename
+    }
+  }
+}

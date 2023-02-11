@@ -1,0 +1,81 @@
+import React from 'react';
+
+const WinterIcon = props => {
+    return (
+        <>
+            <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M30 15V45"
+                    stroke={props.color}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M24.375 9.375L30 15L35.625 9.375"
+                    stroke={props.color}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M24.375 50.625L30 45L35.625 50.625"
+                    stroke={props.color}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M17.0156 22.5L42.9844 37.5"
+                    stroke={props.color}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M9.32812 24.5625L17.0156 22.5L14.9531 14.8125"
+                    stroke={props.color}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M45.0469 45.1875L42.9844 37.5L50.6719 35.4375"
+                    stroke={props.color}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M17.0156 37.5L42.9844 22.5"
+                    stroke={props.color}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M14.9531 45.1875L17.0156 37.5L9.32812 35.4375"
+                    stroke={props.color}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M50.6719 24.5625L42.9844 22.5L45.0469 14.8125"
+                    stroke={props.color}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </>
+    );
+};
+
+export default WinterIcon;

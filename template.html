@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="<%= global.LOCALE %>" data-image-optimizing-origin="<%= process.env.IMAGE_OPTIMIZING_ORIGIN %>" data-media-backend="<%= global.MAGENTO_MEDIA_BACKEND_URL %>">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#ff6334">
+        <link rel="manifest" href="/manifest.json">
+
+        <!--
+            Apple Specific Tags
+
+            To be included until Safari supports WebAppManifest
+            See Docs:
+            - https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+            - https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+        -->
+        <!--
+            Apple Icons for Homescreen
+            Sizes: https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/
+        -->
+        <link rel="apple-touch-icon" href="/venia-static/icons/venia_square_57.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/venia-static/icons/apple-touch-icon.png">
+        <link rel="preconnect" href="<%= process.env.MAGENTO_BACKEND_URL %>">
+        <!--
+            This following CSS is a copy of the css returned by Google's font API that
+            allows us to "skip" a network round trip.
+
+            CSS requests are _render_ blocking, while font requests are only _text_
+            blocking. By removing the link request we only wait for font request, to
+            shave off a few ms :)
+
+            The CSS below this comment is the response copied wholesale from Google's font
+            API. If you ever need to update it, get the response and replace what is below
+            this comment. Remember to replace the preload link above with the src URL!
+
+            Example API responses:
+            https://fonts.googleapis.com/css?family=Muli:400&display=swap
+            https://fonts.googleapis.com/css?family=Source+Serif+Pro:600&display=swap
+        -->
+        <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
+
+        <!-- icon css -->
+        <link href="/public/css/iconmoon.css" rel="stylesheet" type="text/css"/>
+
+        <!-- main css -->
+        <link rel="stylesheet" href="/public/css/main.min.css" type="text/css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/public/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/public/images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/public/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="/public/css/slick.css" type="text/css">
+        <link rel="stylesheet" href="/public/css/slick-theme.css" type="text/css">
+    </head>
+    <body className="bg-body font-sans text-base text-colorDefault">
+      <div id="root"></div>
+      <!-- Inlined Data -->
+      {{#pageTypeNonce}}
+      <script nonce="{{pageTypeNonce}}">
+          try {
+              var INLINED_PAGE_TYPE = JSON.parse('{{pageType}}'.replace(/&quot;/g, '"'));
+          } catch(error) {}
+      </script>
+
+      {{#webpackChunks}}
+          <script type="text/javascript" src="/{{.}}"></script>
+      {{/webpackChunks}}
+
+      {{/pageTypeNonce}}
+      <!-- /Inlined Data -->
+    </body>
+</html>

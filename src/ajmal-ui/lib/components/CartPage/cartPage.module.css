@@ -1,0 +1,568 @@
+.cartWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    gap: 60px;
+}
+
+.cartItemWrapper {
+    width: 60%;
+}
+
+.cartInfoTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    margin-bottom: 32px;
+}
+
+.cartInfoTitle {
+    font-family: 'Gambetta';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.03em;
+    color: #2b2826;
+}
+
+.cartClearTxt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #c8c8c8;
+    cursor: pointer;
+    position: relative;
+}
+
+.cartInfoWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartItemBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.cartItemBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 32px;
+    width: 100%;
+    height: 184px;
+    background: #ffffff;
+    border: 1px solid #f9f5f1;
+    border-radius: 24px;
+}
+
+.cartItemInfo {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.cartItemImage {
+    width: 120px;
+    height: 120px;
+}
+
+.cartProductTopWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cartProductName {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #2b2826;
+}
+
+.cartDiscountPercentage {
+    background-color: #be4040;
+    margin: 6px 0;
+    padding: 2px 8px;
+    border-radius: 16px;
+    color: #fff;
+    margin: 8px 0;
+    display: inline-block;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.cartInfoDescription {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 8px 0 16px 0;
+}
+
+.cartInfoDescText {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+.cartPriceInfoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cartActionWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cartItemActualPrice,
+.cartItemPrice {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.cartItemActualPrice {
+    text-decoration-line: line-through;
+    color: #c8c8c8;
+}
+
+.cartItemPrice {
+    letter-spacing: -0.02em;
+    color: #2b2826;
+}
+
+.cartActionBtnWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    gap: 10px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #c8c8c8;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.cartActionBtnWrapper:hover {
+    border: 1px solid #000000;
+}
+
+.cartProductFav {
+    cursor: pointer;
+}
+
+.cartItemQty {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2b2826;
+}
+
+.cartItemRight {
+    cursor: pointer;
+    /* height: 110px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.cartSummaryWrapper {
+    width: 40%;
+}
+
+.cartOrderSummaryWrapper {
+    margin-bottom: 32px;
+}
+
+.cartOrderSummaryTxt {
+    font-family: 'Gambetta';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.03em;
+    color: #2b2826;
+}
+
+.cartSummaryListItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cartSummaryListItemName,
+.cartSummaryListItemDetails {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.cartSummaryListItemName {
+    color: rgba(43, 40, 38, 0.5);
+}
+
+.cartSummaryListItemDetails {
+    color: #2b2826;
+}
+
+.cartCouponWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.cartCouponWrapper {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    padding: 10px 100px 10px 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.cartCouponActive {
+    border: 1px solid #6aa943;
+    position: relative;
+    width: 100%;
+    /* border: 1px solid #ccc; */
+    border-radius: 100px;
+    padding: 10px 100px 10px 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.cartCouponInput {
+    width: 80%;
+}
+
+.cartCouponBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    background: #bc8b57;
+    color: #fff;
+    outline: none;
+    margin: 0;
+    padding: 12px 30px;
+    z-index: 2;
+    border-radius: 0px 40px 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 20%;
+    cursor: pointer;
+}
+
+.cartCouponBtnClear {
+    opacity: 0.5;
+}
+
+.cartTotalTaxWrapper {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartTotalTxt {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #2b2826;
+}
+
+.cartLineBreaks {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cartFunctionality {
+    margin: 24px 0;
+}
+
+.cartFunctionalityMainWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartFunctionalityWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cartFunctionalityDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cartFunctionalityTitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2b2826;
+}
+
+.cartFunctionalityDescription {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #a4a4a4;
+}
+
+.cartDescriptionWrapper {
+    display: block;
+    margin: 24px 0;
+}
+
+.cartDescription {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(43, 40, 38, 0.5);
+}
+
+.cartFooterInfoWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.cartFooterNeedHelp {
+    width: 50%;
+}
+
+.cartFooterVariation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 28px 0;
+}
+
+.cartFooterTitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #2b2826;
+}
+
+.cartFooterVariationType {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(43, 40, 38, 0.5);
+}
+
+.cartFooterContactWrapper {
+    width: 50%;
+}
+
+.cartContactUsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 28px 0;
+}
+
+.cartContactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartContactTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(43, 40, 38, 0.5);
+}
+
+.cartContactDetail {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(43, 40, 38, 0.5);
+}
+
+/*  */
+.cartRecommended {
+    margin: 40px 0 20px 0;
+}
+
+.cartRecommendedTxt {
+    font-family: 'Gambetta';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.03em;
+    color: #2b2826;
+}
+
+.productWrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0 20px;
+}
+
+.cartMobItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartMobPrice {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #2b2826;
+}
+
+.cartMobQty {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(43, 40, 38, 0.5);
+}
+
+@media (max-width: 991.98px) {
+    .cartWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin: 20px 0;
+        gap: 0;
+    }
+
+    .cartInfoTitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        color: #2b2826;
+    }
+
+    .cartProductName {
+        font-family: 'Gambetta';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        color: #2b2826;
+    }
+
+    .cartItemWrapper {
+        width: 100%;
+    }
+
+    .cartSummaryWrapper {
+        width: 100%;
+    }
+
+    .cartInfoTop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 32px;
+    }
+
+    .cartSummaryWrapper {
+        width: 100%;
+    }
+
+    .cartItemImage {
+        width: 50px;
+        height: 104px;
+    }
+
+    .productWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cartItemBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+        width: 100%;
+        height: 110px;
+        border: none;
+    }
+}
+
+/*  */
+.subCategorySec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.filterOptions {
+    margin: 30px 0;
+}
+
+.subCategoryBannerSection {
+    position: relative;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.subCategoryBanner {
+    width: 100%;
+}
+
+.subCategoryName {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gambetta';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 0;
+    color: #ffffff;
+}
